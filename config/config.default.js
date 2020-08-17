@@ -29,7 +29,12 @@ module.exports = appInfo => {
 			enable: false,
 		},
 	}
-
+	
+	config.cluster = {
+		listen: {
+		  	port: 7003,
+		}
+	};
 	return {
 		...config,
 		...userConfig,
